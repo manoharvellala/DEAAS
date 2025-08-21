@@ -1,0 +1,72 @@
+@import '../../styles/variables.css';
+
+.circuit__title {
+  margin: 0 0 8px 0;
+}
+
+.circuit__svg {
+  width: 100%;
+}
+
+.circuit__wire {
+  stroke: #9ca3af;
+  stroke-width: 2;
+}
+
+.nodeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Panel & inverter cards */
+.nodeBox {
+  width: 180px;
+  min-height: 96px;
+  padding: 10px 12px;
+  border-radius: 12px; /* border radius */
+  border: 2px solid #111827; /* border */
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.panelBox {
+  background: #fde68a; /* amber */
+  border-color: #f59e0b;
+}
+
+.invBox {
+  background: #bfdbfe; /* light blue */
+  border-color: #3b82f6;
+}
+
+.nodeTitle {
+  font-weight: 800;
+  font-size: 18px;
+  color: #111827;
+}
+
+.nodeSub {
+  font-weight: 700;
+  font-size: 16px;
+  color: #111827;
+}
+
+/* Remove button matches panel width */
+.removeButton {
+  background: #111827;
+  border: 2px white;
+  color: #ffffff;
+
+  padding: 6px 8px;
+  cursor: pointer;
+  width: 180px; /* same as panel width */
+  height: 32px;
+  font-weight: 600;
+}
+
+.hint {
+  font-size: 12px;
+  fill: #6b7280;
+}

@@ -1,0 +1,36 @@
+@import '../../styles/variables.css';
+
+.hdr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.hdr__title {
+  font-size: 44px;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 0.3px;
+  color: var(--text);
+  background: linear-gradient(90deg, #f59e0b, #3b82f6, #10b981);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hdr__title .highlight {
+  -webkit-text-fill-color: #f8f9fb; /* solid dark for "Distributed Energy" */
+}
+
+.hdr__badge {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #3730a3;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}

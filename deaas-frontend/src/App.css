@@ -1,0 +1,43 @@
+@import './styles/variables.css';
+
+.app {
+  background: #111827;
+  margin: 0 auto;
+  padding: 28px;
+  color: var(--text);
+}
+.grid-body {
+  /* justify-content: space-around; */
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+/* Responsive row that wraps */
+.grid {
+  display: grid;
+  gap: 16px;
+  width: 100%;
+  /* cards sit in a row; when they don't fit, they wrap to a new row */
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  align-items: stretch;
+}
+
+/* keep if you want a *minimum* of two columns on wide screens.
+   it still wraps on small screens because of auto-fit above */
+.grid--2 {
+  /* optional: on XL screens you may prefer larger cells */
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+}
+
+/* vertical spacing when stacking sections */
+.top-gap {
+  margin-top: 16px;
+}
+
+.footer {
+  opacity: 0.7;
+  margin-top: 16px;
+  text-align: center;
+  font-size: 12px;
+}

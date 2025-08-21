@@ -1,0 +1,31 @@
+@import '../../styles/variables.css';
+.side__title {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+}
+.tile {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: #fff;
+}
+.tile__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+.tile small {
+  opacity: 0.7;
+}
+.tile--ok {
+  background: var(--okBg);
+}
+.tile--fault {
+  background: var(--fault);
+}

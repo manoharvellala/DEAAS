@@ -1,0 +1,33 @@
+@import '../../styles/variables.css';
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 16px;
+}
+.btn {
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  cursor: pointer;
+}
+.btn--primary {
+  background: var(--primary);
+  color: white;
+}
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+.toolbar__left {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.toolbar__hint {
+  font-size: 12px;
+  opacity: 0.75;
+}
